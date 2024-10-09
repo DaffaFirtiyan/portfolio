@@ -24,9 +24,7 @@ export default [
         title: "Bachelor's of Commerce, Majoring in Information Systems and Computer Science",
         location: 'Victoria University of Wellington',
         duration: '5 years',
-        details: [
-            ""
-        ]
+        details: ""
     },
     {
         year: '2022 - 2023',

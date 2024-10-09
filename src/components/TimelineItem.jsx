@@ -16,10 +16,14 @@ function TimelineItem( {year, title, location, duration, details} ) {
                     <div className="my-1 text-sm font-normal leading-none text-stone-600 dark:text-stone-300">
                         {duration}
                     </div>
-                    <p className="my-2 text-base font-normal text-stone-600 dark:text-stone-300">
-                        {Array.isArray(details) ? details.join(' ') : details}
-                    </p>
                 </p>
+                <ul className="my-2 text-base font-normal text-stone-600 dark:text-stone-300 list-disc">
+                    {Array.isArray(details) ? (
+                        details.map((detail, index) => (
+                            <li key={index} className="-ml-1.5 pl-1.5">{detail}</li>
+                        ))
+                    ) : null}
+                </ul>
             </li>
         </ol>
     );
